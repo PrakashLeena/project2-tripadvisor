@@ -13,9 +13,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .header__title1{
@@ -29,6 +30,8 @@ body{
 
 .header__title1 h1{
     display: flex;
+    padding-top: 30px;
+    cursor: pointer;
 }
 
 img{
@@ -41,9 +44,27 @@ img{
 .header__title2{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
+    background-color: transparent;
+    padding: 30px;
+    cursor: pointer;
 
 }
+
+.header__title2 p{
+    padding: 10px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.header__title2 p:hover{
+    background-color: gainsboro;
+    border-radius: 15px;
+
+
+}
+
+
 
 .header__title3{
     display: flex;
@@ -53,18 +74,24 @@ img{
 
 .header__title3--button1{
     color:black;
-    padding: 3px;
+    padding: 8px;
     border-radius: 20px;
     align-items: center;
     text-align: center;
     width: 60px;
     height: 30px;
+    cursor: pointer;
+}
+
+.header__title3--button1:hover{
+    background-color: gainsboro;
+    transition: 0.5s;
 }
 
 .header__title3--button2{
     color: white;
     background-color: black;
-    padding: 3px;
+    padding: 8px;
     border-radius: 20px;
     align-items: center;
     text-align: center;
@@ -83,14 +110,26 @@ img{
 .navbar{
     display: flex;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 20%;
     font-weight: 500;
     gap: 25px;
     padding:30px;
     font-size: 20px;
     color:#545454;
+    cursor: pointer;
    
 }
+
+.navbar p{
+    padding-bottom: 5px;
+}
+
+.navbar p:hover{
+    transition: 1s;
+    text-decoration: underline 2px;
+}
+
+
 
 input{
     display: flex;
@@ -106,12 +145,17 @@ input{
     display: flex;
     border: solid whitesmoke 2px;
     width: 55%;
-    margin-left: 25%;
+    margin-left: 23%;
     border-radius: 30px;
     height: 60px;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     border-radius: 999px;
+    background: transparent;
+}
+
+.searchbar input:focus{
+    outline:none;
 }
 
 .searchbar__button{
@@ -122,7 +166,12 @@ input{
     border-radius: 25px;
     border: solid black 1px;
     align-items: center;
+    cursor: pointer;
 
+}
+
+.searchbar__button:hover{
+    background-color: #91f1ce;
 }
 
 .searchbar p{
@@ -192,6 +241,11 @@ input{
     padding: 10px;
     width: 11%;
     margin-left:5%;
+    cursor: pointer;
+}
+
+.messagebox__button1:hover{
+    background-color: rgb(53, 50, 50);
 }
 
 .messagebox__button2{
@@ -204,6 +258,7 @@ input{
     padding: 10px;
     border: solid black 1px;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .messagebox__button3{
@@ -211,13 +266,15 @@ input{
     position: absolute;
     margin-left: 97%;
     margin-top: 37%;
+    cursor: pointer;
     
 }
 
-.things {
-    padding: 20px;
+
+.things{
+    padding: 10px;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 50px;
 }
 
 .thingscard__container {
@@ -228,20 +285,34 @@ input{
     align-items: center;
     gap: 15px;
     margin-left: 110px;
-    position: absolute;
 }
 
 .thingscard {
     width: 300px;
+    position: relative; 
 }
 
 .thingscard img {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 10%;
-    position: relative;
-    display: flex;
+    display: block; 
 }
+
+.thingscard p {
+    position: absolute;
+    bottom: 10px;       
+    left: 10px;         
+    color: white;
+    background-color:transparent; 
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0;
+    font-size: x-large;
+    font-weight: 1000;
+}
+
 
 .thingscard h3{
     position: absolute;
@@ -253,11 +324,10 @@ input{
 .popular {
     padding: 20px;
     margin-left: 10%;
-    margin-top: 5%;
 }
 
 .popular__title1{
-    margin-top: 20%;
+    margin-top: 5%;
 }
 .popularcard__container {
     padding: 10px;
@@ -385,7 +455,7 @@ input{
 .footer{
     background-color:#F2F2F2;
     color:black;
-    padding: 40px;
+    padding: 100px;
     margin: 10px;
     margin-top: 15%;
 }
@@ -413,23 +483,37 @@ input{
 
 .footer__two{
     padding: 3%;
-    display: flex;
 }
 
-.footer__two__image{
-    height: 40%;
-    width: 10%;
-    padding: 10px;
+.footer__two img{
+    height: 7%;
+    width: 4%;
     display: flex;
+    position: absolute;
 }
 
 .footer__two__image--title{
     display: flex;
+    width: 30%;
+    margin-left: 7%;
+    margin-top: 2%;
+    
+}
+
+.footer__two__titles{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    font-size: small;
 }
 
 
 
-.llc2{
+.footer__two__image--title2{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
     
 }
 
@@ -437,12 +521,40 @@ input{
 .footer__two h3{
     display: flex;
     flex-wrap: wrap;
+    text-decoration: underline;
 }
 
 .footer__two__s1{
     display: flex;
-    margin-left: 80%;
-    margin-bottom: 80%;
+    margin-left: 60%;
+    gap: 10%;
+
+}
+.footer__two__s1__button1{
+    width: 50%;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.footer__two__s1__button2{
+    width: 50%;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding:5px;
+    font-weight: 500;
+}
+
+
+.footer__two__s2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-bottom: 5%;
+    margin-left: 45%;
 }
 
 
