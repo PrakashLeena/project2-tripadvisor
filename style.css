@@ -250,75 +250,201 @@ input{
 
 
 
-.popular{
-    padding: 10px;
+.popular {
+    padding: 20px;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .popular__title1{
     margin-top: 20%;
-    margin-left: 10%;
 }
-
-.popular__title2{
-    margin-left: 10%;
-}
-
-.popularcard__container{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    gap: 25px;
-    margin-left: 110px;
-    position: absolute;
-}
-
-.popularcard img{
-    height: 100%;
-    width: 100%;
-    border-radius: 10%;
-    position: relative;
-    display: flex;
-}
-
-
-.inspiration{
+.popularcard__container {
     padding: 10px;
-}
-
-.inspiration__title1{
-    margin-top: 90%;
-    margin-left: 10%;
-}
-
-.inspiration_container {
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
     gap: 15px;
     margin-left: 110px;
-    position: absolute;
 }
 
-.inspirationcard {
+.popularcard {
     width: 300px;
+    align-items: center;
 }
 
-.inspirationcard img {
+.popularcard img {
     height: 100%;
     width: 100%;
     border-radius: 10%;
-    position: relative;
     display: flex;
 }
 
-.inpirationcard p{
-    position: absolute;
+.popularcard p{
+    width: 70%;
+    margin-left: 20%;
+    align-items: center;
+    font-size: small;
+    font-weight: 700;
+}
+
+
+.places{
+    padding: 10px;
+}
+
+.places__title1{
+    padding: 10px;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #F2F2F2;
+}
+
+.placescard__container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    background-color: #F2F2F2;
+    
+
+}
+
+.placescard {
+    padding: 10px;
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    
+}
+
+.placescard img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.placescard p{
+    margin-left: 40%;
+    width: 50%;
+    font-size: medium;
+    font-weight: 500;
+}
+
+    
+
+.activity {
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.activity__title1{
+    margin-top: 2%;
+}
+.activity__title2{
+   
+}
+.activitycard__container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 110px;
+}
+
+.activitycard {
+    width:300px;
+    align-items: center;
+}
+
+.activitycard img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activitycard p{
+    display: flex;
+    width: 70%;
+    margin-left: 10%;
+    align-items: center;
+    font-size: small;
+    font-weight: 700;
+}
+
+
+
+
+.footer{
+    background-color:#F2F2F2;
+    color:black;
+    padding: 40px;
+    margin: 10px;
+    margin-top: 15%;
+}
+
+.footer__one{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.footer__one__s1{
+    padding: 10px;
+}
+
+.footer__one__s2{
+    padding: 10px;
+}
+
+.footer__one__s3{
+    padding: 10px;
+}
+.footer__one__s4{
+    padding: 10px;
+}
+
+.footer__two{
+    padding: 3%;
     display: flex;
 }
+
+.footer__two__image{
+    height: 40%;
+    width: 10%;
+    padding: 10px;
+    display: flex;
+}
+
+.footer__two__image--title{
+    display: flex;
+}
+
+
+
+.llc2{
+    
+}
+
+
+.footer__two h3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__two__s1{
+    display: flex;
+    margin-left: 80%;
+    margin-bottom: 80%;
+}
+
 
 
 
