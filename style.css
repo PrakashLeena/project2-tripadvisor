@@ -197,6 +197,7 @@ input{
     position: relative;
 }
 
+
 .messagebox__centerline{
     height: 430px;
     width: 5px;
@@ -651,6 +652,10 @@ input{
     
     }
 
+    .header__title4{
+        margin-left: 10px;
+    }
+
     .navbar{
         display: flex;
         flex-wrap: wrap;
@@ -665,6 +670,7 @@ input{
         flex-wrap: wrap;
         flex-basis: 25%;
         justify-content: space-around;
+        margin-left: 10px;
     }
     .searchbar{
         width: 80%;
@@ -672,7 +678,7 @@ input{
         font-size: xx-small;
         margin: 0%;
         padding: 0%;
-        margin-left: 11%;
+        margin-left: 10%;
         margin-top: 25px;
     }
 
@@ -722,7 +728,7 @@ input{
         margin: 0%;
         margin-bottom: 20px;
         font-size: 15px;
-        margin-left: 30px;
+        margin-left: 15px;
     }
 
     .messagebox__button2{
