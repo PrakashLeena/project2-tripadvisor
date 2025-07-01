@@ -655,7 +655,6 @@ input{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 5px;
         justify-content: space-between;
         margin:0;
         padding: 0%;
@@ -663,9 +662,10 @@ input{
 
     .navbar p{
         font-size: x-small;
-        justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
+        flex-basis: 25%;
+        justify-content: space-around;
     }
     .searchbar{
         width: 80%;
@@ -749,7 +749,7 @@ input{
 
     .messagebox__button3{
         margin-top: 410px;
-        margin-left: 400px;
+        margin-left: 300px;
         display: flex;
         position: absolute;
        
