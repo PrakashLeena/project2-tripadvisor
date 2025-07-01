@@ -9,7 +9,7 @@ body{
 }
 
 .header{
-    padding: 10px;
+    padding: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -655,7 +655,7 @@ input{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 15px;
+        gap: 5px;
         justify-content: space-between;
         margin:0;
         padding: 0%;
@@ -736,9 +736,23 @@ input{
         
     }
 
-    .messagebox__button1 p{
-        padding: 0%;
+    .messagebox__button1{
         margin: 0%;
+        padding: 0;
+        margin-top: 400px;
+        display: flex;
+        position: absolute;
+        width: 80px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+
+    .messagebox__button3{
+        margin-top: 410px;
+        margin-left: 400px;
+        display: flex;
+        position: absolute;
+       
     }
 
     .things{
